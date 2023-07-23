@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <form onsubmit="calculateTemp(); return false" >
+            <h2 class="heading">Temperature Convertor</h2>
+          <input type="number" name="tempInput" id="tempInput" placeholder="Enter a number" />
+          <div class="fromToContainer">
+            <select id="from">
+              <option value="cel1">°Celsius</option>
+              <option value="far1">°Fahrenheit</option>
+              <option value="kel1">°Kelvin</option>
+            </select>
+            <select id="to">
+              <option value="cel2">°Celsius</option>
+              <option value="far2">°Fahrenheit</option>
+              <option value="kel2">°Kelvin</option>
+            </select>
+          </div>
+          <input type="submit" value="Convert" id="submit-btn"/>
+          <div class="result-container">
+            <h1 id="result">---</h1>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
